@@ -1,0 +1,29 @@
+.services{
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.banner img{
+    width: 100vw;
+    height:300px;
+    object-fit: cover;
+}
+.banner h1{
+    font-size: 80px;
+    transform: translateY(-250%);
+    z-index:2;
+    letter-spacing: 15px;
+    color:white;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner h1{
+        font-size: 60px;
+        transform: translateY(-300%);
+        z-index:2;
+        letter-spacing: 10px;
+    }
+
+}

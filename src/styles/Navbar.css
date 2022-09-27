@@ -1,0 +1,126 @@
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: transparent ;
+  top:0;
+  position: fixed;
+  z-index:999;
+ 
+
+}
+.navbar:hover{
+  background-image: linear-gradient(45deg, #ee9ca7 100%, #ffdde1 0%);
+}
+.navbar.active{
+  background-image: linear-gradient(45deg, #ee9ca7 100%, #ffdde1 0%);
+}
+.title{
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(10px);
+  font-size:30px;
+  letter-spacing: 4px;
+  color: #ffffff;
+}
+
+.links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  transform: translateY(-13px);
+}
+
+.navbar a {
+  width: 120px;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 17px;
+}
+
+.toggleButton {
+  width: 100%;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.toggleButton svg {
+  font-size: 40px;
+  color: #FFF5E4;
+}
+.toggleButton button {
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#open {
+  height: 100%;
+}
+
+#open .links {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 100px;
+}
+
+#open a {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+
+
+/*@media only screen and (max-width: 900px) {
+
+} */
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 25px;
+    transform: translateY(-37px);
+    display: inline-block;
+  }
+  .toggleButton {
+    display: flex;
+    margin-top:20px;
+    
+  }
+  #close a {
+    display: none;
+  }
+  
+}
+
+@media only screen and (min-width: 600px) {
+  .toggleButton {
+    display: none;
+  }
+
+  .hiddenLinks {
+    display: none;
+  }
+
+  #open {
+    height: 100px;
+
+  }
+
+  #open .links {
+    flex-direction: row;
+    transform: translateY(0px);
+
+  }
+
+}

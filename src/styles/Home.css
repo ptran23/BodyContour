@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+.home{
+    width: 100%;
+    margin:0;
+    padding:0;
+    font-family: 'Lora', serif;
+    overflow: hidden;
+    
+}
+
+video{
+    width: 100%;
+    min-height: 630px;
+    max-height:80vh;
+    object-fit: cover;
+    transform: translateY(-10px);
+}
+.container{
+    transform: translateY(-100px);
+    margin-top: -200px;
+    color:white;
+    letter-spacing: 4px;
+    font-size: 1.2em;
+    letter-spacing: 0.4em;
+    padding:50px;
+    text-align: left;
+    padding-left: 120px;
+}
+.button{
+    background-color: #f9fcf9; 
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #eb7088;
+    color:white;
+}
+
+/* SERVICE HERO */
+.services-container {
+    display:grid;
+    grid-template-columns: 35% 65%;
+    grid-column-gap:80px;
+    color: rgb(75, 74, 74);
+    
+}
+.service-text {
+    width:100%;
+    min-height: 450px;
+    text-align: left;
+    padding-right: 40px;
+    z-index:2;
+    background-color: white;
+    border-right: 6px solid #eb7088;
+    padding-left:120px;
+
+}
+.service-text h4 {
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+.service-text h1{
+    letter-spacing: 1px;
+    font-size:40px;
+    margin-top:-10px;
+}
+.service-text p{
+    margin-top:-8px;
+    font-size:20px;
+}
+
+.sbutton{
+    background-color: #eb7088; 
+    color:white;
+    border: none;
+    border-radius: 20px;
+    padding: 13px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.sbutton:hover{
+    scale: 1.1;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel {
+    width:100%;
+    padding-left:120px;
+}
+
+.services-listing{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+
+}
+  
+  .serviceItem {
+    border-radius: 15px;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;  
+  }
+.serviceItem:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in;
+    cursor: grab;
+}
+  
+.serviceItem .bgImage {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.serviceItem h1 {
+    font-size: 20px;
+    margin-top: 25px;
+}
+/* About ME HERO SECTION */
+.aboutMe{
+    background-image: linear-gradient(45deg, #ee9ca7 30%, #ffdde1 100%);
+    min-height: 550px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    padding-left: 120px;
+}
+
+.aboutText{
+    width: 500px;
+    text-align: left;
+    padding-top: 50px;
+    font-size:20px;
+}
+.aboutText h4 {
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+  .aboutText h1{
+    letter-spacing: 1px;
+    font-size:40px;
+    margin-top:-10px;
+}
+  .aboutText p{
+    margin-top:-8px;
+    font-size:20px;
+}
+  .aboutPicture{
+    transform: rotate(5deg);
+    padding-right: 90%;
+    transition: transform .2s;
+    padding-top: 20px;
+   
+}
+/*
+.aboutPicture:hover{
+    transform: rotate(0deg);
+    scale:1.1; 
+}
+*/
+
+  .aboutPicture img {
+    width: 450px;
+    height:450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 14px 14px 70px 14px;
+    
+    background-color: #f2f3f2;
+    box-shadow: 0px 3px 15px rgba(1, 1, 1, .4);
+  }
+
+  .aboutPicture figcaption {
+    font-size: 25px;
+    margin-top:-70px;
+    color: black;
+    font-family: 'Cedarville Cursive', cursive;
+    white-space: nowrap;
+    transform: translateX(150px);
+}
+.testimony-wrap{ /* TESTIMONY HERO SECTION */
+    align-content: center;
+    
+}
+.inner-wrap{
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.testimony-wrap h1{  
+    font-size: 40px;
+    color: rgb(75, 74, 74); 
+    text-decoration: underline;
+    text-decoration-color: #eb7088;
+    text-decoration-style: wavy;
+    padding-top: 35px;
+}
+.testimonies{                     
+    color: rgb(75, 74, 74);
+    font-size:15px;
+    padding-top:10px;
+    margin-top:10px;
+}
+.testimonies h2{
+    display: inline-block;
+
+}
+.testimonies h4{
+    transform: translateY(-30px);
+    padding-left: 50px;
+
+}
+.quotes{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+   
+
+}
+.right-arrow{
+    font-size:2rem;
+    color:#eb7088;
+    cursor: pointer;
+    
+}
+.left-arrow{
+    
+    font-size:2rem;
+    color:#eb7088;
+    cursor: pointer;
+  
+}
+
+.tbutton{
+    background-color: #eb7088; 
+    color:white;
+    border: none;
+    border-radius: 30px;
+    padding: 18px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.tbutton:hover{
+    scale: 1.1;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 850px) {
+    .aboutMe{
+        grid-template-columns: 1fr;
+        margin-top:50px;
+        min-height: 700px;
+        padding:0;
+        padding-top:10px;
+    }
+    .aboutText{
+        padding-top: 20px;
+    }
+    .aboutPicture{
+        transform: rotate(0deg);
+        padding-left: 0px;
+        padding-right: 0%;
+        padding-bottom: 40px;
+    }
+    .aboutPicture:hover{
+        scale:1;
+    }
+    .aboutPicture img {
+        width: 300px;
+        height:300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -20px;
+        
+      }
+      .aboutPicture figcaption {
+        font-size: 25px;
+        transform: translateX(0px);
+    }
+     .aboutText{
+        display: inline-block;
+        width:100vw;
+        min-height: auto;
+        text-align: center;
+        padding:0;
+        margin: 0;
+     }
+      .aboutText h4 {
+         width: 100vw;
+         font-size: 15px;
+     }
+      .aboutText h1 {
+         font-size: 25px;
+     }
+     .aboutText p {
+         margin-top: 10px;
+         font-size: 15px;
+         padding:0 10%;
+     }
+}
+/*@media only screen and (max-width: 800px) {
+
+}*/
+@media only screen and (max-width: 800px) {
+    .services-container {
+    grid-template-columns: 1fr;
+    margin-top: -70px;
+    }
+    .service-text, .aboutText{
+       display: inline-block;
+       width:100vw;
+       min-height: auto;
+       text-align: center;
+       padding:0;
+       margin: 0;
+    }
+    .service-text h4, .aboutText h4 {
+        width: 100vw;
+        font-size: 15px;
+    }
+    .service-text h1, .aboutText h1 {
+        font-size: 25px;
+    }
+    .service-text p , .aboutText p {
+        margin-top: 10px;
+        font-size: 15px;
+        padding:0 10%;
+    }
+    .sbutton{
+        margin-top: 10px;
+    }
+    .services-listing{
+        grid-column-gap: 20px;
+        padding-left: 0px;
+        margin-left:0;
+        margin-top:20px;
+    }
+    .serviceItem {
+        width: 250px;
+      }
+      .carousel {
+        width:100%;
+        padding-left:0px;
+    }
+
+    
+      .testimony-wrap{ /* TESTIMONY HERO SECTION */
+        margin-top: 50px;
+    }
+    .testimony-wrap h1{  
+        font-size: 30px;
+        color: rgb(75, 74, 74); 
+        text-decoration: underline;
+        text-decoration-color: #eb7088;
+        text-decoration-style: wavy;
+
+    }
+
+}
+
+/*@media only screen and (max-width: 600px) {
+}*/
+
+@media only screen and (max-width: 600px) {
+    .services-container {
+        grid-template-columns: 1fr;
+        margin-top: -40px;
+        }
+    .serviceItem {
+        width: 200px;
+        height: 345px;
+    }
+    .serviceItem .bgImage {
+        height: 250px;
+    }
+      
+    .container{
+        padding-left:40px;
+        font-size: 0.8em;
+    }
+    .aboutPicture img {
+        width: 250px;
+        height:250px;
+      }
+
+}

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+.gallery{
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+.banner{
+    height: 500px;
+}
+.banner img{
+    width: 100vw;
+    height: 300px;
+    object-fit: cover;
+}
+.banner h1{
+    font-size: 80px;
+    transform: translateY(-250%);
+    z-index:2;
+    letter-spacing: 15px;
+    color:white;
+}
+.galleryImages{
+    column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+    padding: 0 25px;
+    margin-top: -130px;
+
+}
+.image img{
+    width: 95%;
+}
+.galleryImages .image{
+    transition: all 350ms ease ;
+    cursor:pointer;
+    margin-bottom: 12px;
+}
+.galleryImages .image:hover{
+    filter: opacity(.8);
+}
+.current {
+    width: 100%;
+    height:100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    transition: opacity .4s ease, visability .4s ease, transform .5s ease-in-out ;
+    visibility:hidden ;
+    opacity: 0;
+    transform: scale(0);
+    overflow: hidden;
+    z-index: 999;
+}
+.current.open{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+
+}
+.current img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: block;
+    line-height: 0;
+    box-sizing: border-box;
+    padding:100px 0 20px;
+    margin: 0 auto;
+}
+.closeX{
+    position: fixed;
+    top:10%;
+    right:5%;
+    background-color: rgba(0, 0, 0,0.4);
+    color: #ffff;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.more h2{
+    font-family: 'Lora', serif;
+    color:#eb7088 ;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+.more svg{
+    font-size: 80px;
+    padding: 0px 20px;
+    color:#eb7088 ;
+}
+.more svg:hover{
+    filter: opacity(.8);
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .banner h1{
+        font-size: 60px;
+        transform: translateY(-300%);
+        z-index:2;
+        letter-spacing: 10px;
+    }
+    .galleryImages{
+        column-count: 3;
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+    
+    }
+    .current img {
+        width: 70vw;
+        max-width: 100%;
+    }
+    .closeX{
+        top:20%;
+        right:8%;
+    }
+    .more h2{
+        font-family: 'Lora', serif;
+        color:#eb7088 ;
+        font-size: 25px;
+    }
+    .more svg{
+        font-size: 50px;
+        padding: 0px 15px;
+        color:#eb7088 ;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .galleryImages{
+        column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+
+
+}
