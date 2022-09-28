@@ -11,10 +11,14 @@ function BookNow() {
       <div className='banner'>
         <img src={bannerPic} alt=""/>
         <h1>Book Now</h1>
+        
+      </div>
+      <div className='journey'>
+        <h1> Start Your <u>Journey</u></h1>
       </div>
 
       <div className='booknow-container'>
-
+  
         <div className='contact'>
           <p> Contact Me</p>
             <div className='email'> 

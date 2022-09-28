@@ -25,8 +25,14 @@
     grid-template-columns: 1fr 2fr;
     height: 65vh;
     margin-bottom: 30px;
-    margin-top: -140px;
     
+}
+.journey{
+    margin-top: -140px;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color:#eb7088 ;
 }
 .contact{
     color:#eb7088 ;
