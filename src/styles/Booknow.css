@@ -34,6 +34,9 @@
     font-size: 20px;
     color:#eb7088 ;
 }
+.journey u{
+    text-decoration-color:rgb(240, 189, 123);
+}
 .contact{
     color:#eb7088 ;
     border-right: 6px solid #eb7088;
@@ -108,7 +111,7 @@ input[type=text]{
 @media only screen and (max-width: 850px) {
     
 .bookNow{
-    min-height: 1190px;
+    min-height: 1300px;
 }
     .booknow-container{
         grid-template-columns: 1fr  ;
@@ -136,6 +139,10 @@ input[type=text]{
         transform: translateY(-300%);
         z-index:2;
         letter-spacing: 5px;
+    }
+    .journey{
+        padding: 0 20px;
+        font-size: 18px;
     }
 
 
