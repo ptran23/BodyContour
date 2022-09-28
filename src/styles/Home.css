@@ -376,7 +376,6 @@ video{
         text-decoration: underline;
         text-decoration-color: #eb7088;
         text-decoration-style: wavy;
-
     }
 
 }
@@ -391,7 +390,7 @@ video{
         }
     .serviceItem {
         width: 200px;
-        height: 345px;
+        height: 325px;
     }
     .serviceItem .bgImage {
         height: 250px;
@@ -406,4 +405,13 @@ video{
         height:250px;
       }
 
+@media only screen and (max-width: 450px) {
+    .testimony-wrap h1{  
+        font-size: 25px;
+        color: rgb(75, 74, 74); 
+        text-decoration: underline;
+        text-decoration-color: #eb7088;
+        text-decoration-style: wavy;
+    }
+    }
 }

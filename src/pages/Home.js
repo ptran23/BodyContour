@@ -14,11 +14,16 @@ function Home() {
 // service carousel
 const [width,setWidth] = useState(0)
 const carousel = useRef()
-
 useEffect(() => {
-  setWidth(carousel.current.scrollWidth  - (carousel.current.offsetWidth *0.45 ))
+  let widthVariable = 1.5;
+  if (carousel.current.scrollWidth > 1300){
+    widthVariable = 1.2
+  }
+  else if (carousel.current.scrollWidth > 700){
+    widthVariable = 1.6
+  }
+  setWidth((carousel.current.scrollWidth *  widthVariable ) - (carousel.current.offsetWidth ))
 }, [])
-
 // Testimony carousel
 const[current, setCurrent] = useState(0)
 const length = testimonyList.length

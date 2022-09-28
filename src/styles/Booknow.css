@@ -106,13 +106,22 @@ input[type=text]{
 }
     .booknow-container{
         grid-template-columns: 1fr  ;
-        grid-template-rows: 1fr 2fr ;
     }
     .contact{
         border-right: 0px ;
+        
     }
     .email, .phone{
-        grid-template-columns: 1fr 3fr ;
+        grid-template-columns: 1fr 2fr ;
+        margin-top: -20px;
+        
+    }
+    .contact{
+        background-color: antiquewhite;
+        margin-bottom: 20px;
+    }
+    .contact p {
+        letter-spacing: 4px;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -122,5 +131,6 @@ input[type=text]{
         z-index:2;
         letter-spacing: 5px;
     }
+
 
 }

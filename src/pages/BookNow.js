@@ -16,25 +16,24 @@ function BookNow() {
       <div className='booknow-container'>
 
         <div className='contact'>
-         <p> Contact Me</p>
-          <div className='email'> 
-            <div className='email-container'>
-              <EmailIcon/> 
-            </div> 
-            <div className='email-text'>
-              <h4>bodyContour@gmail.com</h4>
+          <p> Contact Me</p>
+            <div className='email'> 
+              <div className='email-container'>
+                <EmailIcon/> 
+              </div> 
+              <div className='email-text'>
+                <h4>bodyContour@gmail.com</h4>
+              </div>
             </div>
-          </div>
-          
-          <div className='phone'> 
-            <div className='phone-container'>
-              <PhoneIcon/> 
-            </div> 
-            <div className='phone-text'>
-              <h4>416-434-4356</h4>
+            
+            <div className='phone'> 
+              <div className='phone-container'>
+                <PhoneIcon/> 
+              </div> 
+              <div className='phone-text'>
+                <h4>416-434-4356</h4>
+              </div>
             </div>
-          </div>
-
         </div>
 
         <div className='message'>
