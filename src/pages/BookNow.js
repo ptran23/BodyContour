@@ -14,7 +14,7 @@ function BookNow() {
         
       </div>
       <div className='journey'>
-        <h1> Start Your <u>Journey</u></h1>
+        <h1> Start Your <u>Journey</u>.</h1>
       </div>
 
       <div className='booknow-container'>

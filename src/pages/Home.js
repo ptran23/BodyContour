@@ -7,6 +7,8 @@ import Testimonies from '../components/Testimonies'
 import {testimonyList} from '../helpers/TestimonyList'
 import { motion } from "framer-motion"
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
+import Aos from 'aos';
+import "aos/dist/aos.css"
 import "../styles/Home.css"
 
 
@@ -34,6 +36,12 @@ const nextSlide = () => {
 const prevSlide = () => {
   setCurrent(current===0? length -1 : current -1)
 }
+
+//AOS init
+  useEffect(() =>{
+    Aos.init({duration:1000,once: true })
+  },[])
+  
   return (
     <div className='home'>
 
@@ -68,7 +76,7 @@ const prevSlide = () => {
               <button className='sbutton'>Learn More</button>
             </a>
         </div>
-        <motion.div ref={carousel} className="carousel">
+        <motion.div ref={carousel} className="carousel" data-aos="fade-up">
           <motion.div 
             drag = "x"
             dragConstraints= {{right: 0, left: -width}} 
@@ -93,14 +101,14 @@ const prevSlide = () => {
               the hopes of becoming a nurse practitioner. 
           </p>
         </div>
-        <div className='aboutPicture'>
+        <div className='aboutPicture' >
             <img src= {picture} alt="Name"/> 
            <figcaption>Name Here </figcaption>
         </div>
       </div>
 
-      <div className='testimony-wrap'>
-        <h1> See what others are saying !</h1>
+      <div className='testimony-wrap' >
+        <h1 data-aos="zoom-in"> See what others are saying !</h1>
         <div className='inner-wrap'>
               <div className='quotes'>
 

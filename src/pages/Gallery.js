@@ -1,9 +1,11 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 import bannerPic from '../assets/Gallery.jpg'
 import {galleryList} from '../helpers/GalleryList'
 import CloseIcon from '@material-ui/icons/Close'
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
+import Aos from 'aos';
+import "aos/dist/aos.css"
 import  "../styles/Gallery.css"
 
 function Gallery() {
@@ -13,6 +15,11 @@ function Gallery() {
     setTemp(imageSrc);
     setCurrent(true)
   }
+      //AOS init
+      useEffect(() =>{
+        Aos.init({duration:1000,once: true })
+      },[])
+      
   return (
     <div className='gallery'>
           <div className='banner'>
@@ -24,7 +31,7 @@ function Gallery() {
              <img src = {temp} />
              <CloseIcon className='closeX' onClick = {() => setCurrent(false)}/>
           </div>
-          <div className='galleryImages'>
+          <div className='galleryImages' data-aos="zoom-in">
               {galleryList.map((id,index) => {
                   return(
                       <div className='image' key ={index} alt ="service-images" onClick={()=> getImg(id.imageSrc)}>

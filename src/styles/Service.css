@@ -3,6 +3,7 @@
     padding:0;
     overflow: hidden;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .banner img{
@@ -17,13 +18,88 @@
     letter-spacing: 15px;
     color:white;
 }
+.services-wrap{
+    margin-top: -100px;
+}
+.services-wrap nav{
+    margin-bottom: 10px;
+}
+.services-button{
+    background-color: #eb7088; 
+    color:white;
+    border: none;
+    padding: 10px 7px;
+    text-align: center;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    margin:5px 5px;
+   
+}
+.card{
+    display: grid;
+    margin:10px ;
+    padding:20px;
+    color: rgb(75, 74, 74);
 
+}
+
+.service-title{
+    font-size:18px;
+    letter-spacing: 4px;
+    color: #eb7088;
+}
+.service-description{
+    padding: 10px 30px;
+    font-size: 25px;
+    border: 1px solid #eb7088;
+    width: 60vw;
+    margin-left:auto;
+    margin-right:auto;
+   
+}
+
+.service-time p {
+    font-size:20px;
+    letter-spacing: 2px;
+    color: #eb7088;
+}
+.service-time{
+    font-size:18px;
+
+}
+.service-price{
+    font-size: 20px;
+    border:1px solid #eb7088;
+    background-color:#eb7088 ;
+    width: 160px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+    color: white;
+    border-top-right-radius: 40% 70%;
+    border-bottom-left-radius: 30% 70%;
+}
 @media only screen and (max-width: 600px) {
     .banner h1{
         font-size: 60px;
         transform: translateY(-300%);
         z-index:2;
         letter-spacing: 10px;
+    }
+    .services-button{
+        padding: 8px 5px;
+        font-size: 12px;
+        margin:5px 2px;
+    }
+    .service-description{
+        padding: 10px 15px;
+        font-size: 20px;
+        border: 1px solid #eb7088;
+        width: 75vw;
+        margin-left:auto;
+        margin-right:auto;
+       
     }
 
 }
